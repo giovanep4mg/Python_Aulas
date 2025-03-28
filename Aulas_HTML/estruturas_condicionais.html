@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre Estruturas Condicionais (if/else) no Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula sobre Estruturas Condicionais (if/else) no Python</h1>
+
+    <h2>1. O que são Estruturas Condicionais?</h2>
+    <p>As estruturas condicionais são fundamentais para controlar o fluxo de um programa, permitindo que certas ações
+        sejam executadas apenas se determinadas condições forem atendidas.</p>
+    <p>No Python, usamos as palavras-chave <strong>if</strong>, <strong>elif</strong> e <strong>else</strong> para tomar
+        decisões no código:</p>
+    <ul>
+        <li><strong>if</strong> → Verifica se uma condição é verdadeira e executa um bloco de código.</li>
+        <li><strong>elif</strong> → (Opcional) Permite testar múltiplas condições.</li>
+        <li><strong>else</strong> → (Opcional) Define um bloco de código para ser executado caso nenhuma das condições
+            anteriores seja verdadeira.</li>
+    </ul>
+
+    <h2>2. Estrutura Básica do <code>if/else</code></h2>
+    <pre>
+idade = 18
+
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
+    </pre>
+    <p><strong>Explicação:</strong><br>
+        Se a idade for <strong>maior ou igual a 18</strong>, o programa exibe <strong>"Você é maior de idade."</strong>;
+        caso contrário, mostra <strong>"Você é menor de idade."</strong>.</p>
+
+    <h2>3. Usando <code>elif</code> para Múltiplas Condições</h2>
+    <pre>
+nota = 75
+
+if nota >= 90:
+    print("Nota A - Excelente!")
+elif nota >= 80:
+    print("Nota B - Muito bom!")
+elif nota >= 70:
+    print("Nota C - Bom!")
+elif nota >= 60:
+    print("Nota D - Aprovado.")
+else:
+    print("Nota F - Reprovado.")
+    </pre>
+    <p><strong>Explicação:</strong><br>
+        O programa verifica <strong>cada faixa de nota</strong> e imprime a classificação correspondente.</p>
+
+    <h2>4. Uso de <code>if/else</code> com Operadores Lógicos</h2>
+    <pre>
+idade = 25
+tem_carteira = True
+
+if idade >= 18 and tem_carteira:
+    print("Pode dirigir.")
+else:
+    print("Não pode dirigir.")
+    </pre>
+    <p><strong>Explicação:</strong><br>
+        O programa só imprime <strong>"Pode dirigir."</strong> se a <strong>idade for maior ou igual a 18</strong>
+        <strong>E</strong> a pessoa <strong>tiver carteira</strong>.
+    </p>
+
+    <h2>5. Operador Ternário (<code>if</code> em uma linha)</h2>
+    <pre>
+idade = 20
+status = "Maior de idade" if idade >= 18 else "Menor de idade"
+print(status)  # Saída: Maior de idade
+    </pre>
+    <p><strong>Explicação:</strong><br>
+        Se <code>idade >= 18</code> for verdadeiro, a variável <code>status</code> recebe <strong>"Maior de
+            idade"</strong>; senão, recebe <strong>"Menor de idade"</strong>.</p>
+
+    <h2>6. Exemplo Prático: Verificando Número Par ou Ímpar</h2>
+    <pre>
+numero = int(input("Digite um número: "))
+
+if numero % 2 == 0:
+    print("O número é par.")
+else:
+    print("O número é ímpar.")
+    </pre>
+    <p><strong>Explicação:</strong><br>
+        O operador <strong>%</strong> calcula o resto da divisão por 2: Se for <strong>0</strong>, o número é
+        <strong>par</strong>. Caso contrário, é <strong>ímpar</strong>.
+    </p>
+
+    <h2>7. Exemplo com Múltiplas Condições: Classificação Etária</h2>
+    <pre>
+idade = int(input("Digite sua idade: "))
+
+if idade < 12:
+    print("Você é uma criança.")
+elif idade < 18:
+    print("Você é um adolescente.")
+elif idade < 60:
+    print("Você é um adulto.")
+else:
+    print("Você é um idoso.")
+    </pre>
+    <p><strong>Explicação:</strong><br>
+        O programa classifica a pessoa conforme sua idade.</p>
+
+    <h2>Conclusão</h2>
+    <p>Agora você já sabe como usar <code>if/else</code> para tomar decisões no Python! 🚀</p>
+</body>
+
+</html>

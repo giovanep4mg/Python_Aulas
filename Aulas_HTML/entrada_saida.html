@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada e Saída de Dados em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: "Courier New", monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Entrada e Saída de Dados em Python</h1>
+    <h2>🎯 Objetivo da Aula</h2>
+    <ul>
+        <li>Entender como funcionam as funções <code>input()</code> e <code>print()</code>.</li>
+        <li>Aprender a formatar saídas com <code>print()</code>.</li>
+        <li>Capturar e processar dados de entrada com <code>input()</code>.</li>
+        <li>Testar no VS Code.</li>
+    </ul>
+
+    <h2>🖥️ Saída de Dados: <code>print()</code></h2>
+    <p>A função <code>print()</code> exibe informações na tela.</p>
+    <h3>Exemplo 1: Exibir um texto</h3>
+    <pre><code>print("Olá, mundo!")</code></pre>
+
+    <h3>Exemplo 2: Exibir números e expressões matemáticas</h3>
+    <pre><code>print(10)
+        print(5 + 3)</code></pre>
+
+    <h3>Exemplo 3: Exibir variáveis</h3>
+    <pre><code>nome = "Carlos"
+        idade = 25
+        print("Nome:", nome)
+        print("Idade:", idade)</code></pre>
+
+    <h3>Exemplo 4: Usando f-strings para formatar saída</h3>
+    <pre><code>nome = "Ana"
+idade = 30
+print(f"Meu nome é {nome} e tenho {idade} anos.")</code></pre>
+
+    <h2>⌨️ Entrada de Dados: <code>input()</code></h2>
+    <p>A função <code>input()</code> permite capturar dados do usuário.</p>
+
+    <h3>Exemplo 1: Pedindo um nome</h3>
+    <pre><code>nome = input("Digite seu nome: ")
+print(f"Olá, {nome}!")</code></pre>
+
+    <h3>Exemplo 2: Pedindo um número</h3>
+    <pre><code>idade = input("Digite sua idade: ")
+print(f"Você tem {idade} anos.")</code></pre>
+
+    <h3>Exemplo 3: Convertendo entrada para número</h3>
+    <pre><code>num1 = int(input("Digite um número: "))
+num2 = int(input("Digite outro número: "))
+soma = num1 + num2
+print(f"A soma é {soma}")</code></pre>
+
+    <h2>🔧 Rodando o Código no VS Code</h2>
+    <ol>
+        <li>Abra o VS Code.</li>
+        <li>Crie um arquivo <code>.py</code> (exemplo: <code>entrada_saida.py</code>).</li>
+        <li>Escreva o código acima.</li>
+        <li>Salve o arquivo (<code>Ctrl + S</code>).</li>
+        <li>Abra o terminal no VS Code (<code>Ctrl + J</code>).</li>
+        <li>Execute o código digitando: <code>python entrada_saida.py</code></li>
+        <li>Digite os valores quando solicitado e veja o resultado no terminal!</li>
+    </ol>
+
+    <h2>📌 Resumo</h2>
+    <ul>
+        <li><code>print()</code> exibe informações na tela.</li>
+        <li><code>input()</code> captura dados do usuário (sempre como string).</li>
+        <li>Para cálculos, converta <code>input()</code> para <code>int()</code> ou <code>float()</code>.</li>
+        <li>No VS Code, salve o código e rode no terminal com <code>python nome_do_arquivo.py</code>.</li>
+    </ul>
+</body>
+
+</html>

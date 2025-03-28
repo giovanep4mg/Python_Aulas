@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre Listas e Tuplas no Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula sobre Listas e Tuplas no Python</h1>
+
+    <h2>1. O que são Listas?</h2>
+    <p>Listas são coleções ordenadas e mutáveis de elementos.</p>
+    <pre>
+frutas = ["maçã", "banana", "uva", "laranja"]
+print(frutas)
+    </pre>
+
+    <h2>2. Operações com Listas</h2>
+    <h3>Acessando elementos</h3>
+    <pre>
+print(frutas[0])  # maçã
+print(frutas[-1])  # laranja
+    </pre>
+
+    <h3>Modificando elementos</h3>
+    <pre>
+frutas[1] = "morango"
+print(frutas)
+    </pre>
+
+    <h3>Adicionando elementos</h3>
+    <pre>
+frutas.append("abacaxi")
+frutas.insert(1, "melancia")
+    </pre>
+
+    <h3>Removendo elementos</h3>
+    <pre>
+frutas.remove("uva")
+ultimo = frutas.pop()
+    </pre>
+
+    <h2>3. O que são Tuplas?</h2>
+    <p>Tuplas são coleções imutáveis de elementos.</p>
+    <pre>
+cores = ("vermelho", "azul", "verde")
+print(cores[1])  # azul
+    </pre>
+
+    <h2>4. Diferença entre Listas e Tuplas</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Característica</th>
+            <th>Lista</th>
+            <th>Tupla</th>
+        </tr>
+        <tr>
+            <td>Mutabilidade</td>
+            <td>Mutável</td>
+            <td>Imutável</td>
+        </tr>
+        <tr>
+            <td>Símbolos</td>
+            <td>[] (colchetes)</td>
+            <td>() (parênteses)</td>
+        </tr>
+        <tr>
+            <td>Performance</td>
+            <td>Mais lenta</td>
+            <td>Mais rápida</td>
+        </tr>
+    </table>
+
+    <h2>5. Quando usar?</h2>
+    <p><strong>Listas:</strong> Quando precisar modificar os dados.</p>
+    <p><strong>Tuplas:</strong> Quando quiser garantir que os dados permaneçam inalterados.</p>
+
+    <h2>Conclusão</h2>
+    <p>Agora você já sabe como trabalhar com Listas e Tuplas no Python! 🚀</p>
+</body>
+
+</html>

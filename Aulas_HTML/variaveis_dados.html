@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e Tipos de Dados em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p,
+        code,
+        pre {
+            font-size: 18px;
+            color: #555;
+        }
+
+        pre {
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔥 Variáveis e Tipos de Dados em Python</h1>
+
+    <h2>🔥 1. O que são Variáveis?</h2>
+    <p>Em Python, variáveis são usadas para armazenar dados que podem ser manipulados pelo programa. Elas são como
+        "caixinhas" onde guardamos informações.</p>
+    <pre><code>nome = "Carlos"
+idade = 25
+altura = 1.75
+is_estudante = True</code></pre>
+    <p>Aqui, criamos quatro variáveis:</p>
+    <ul>
+        <li>nome (string, str)</li>
+        <li>idade (inteiro, int)</li>
+        <li>altura (número decimal, float)</li>
+        <li>is_estudante (booleano, bool)</li>
+    </ul>
+
+    <h2>⚡ 2. Tipos de Dados em Python</h2>
+    <h3>🔹 1. Inteiros (int)</h3>
+    <pre><code>idade = 25
+ano = 2024
+quantidade = -10</code></pre>
+
+    <h3>🔹 2. Números Decimais (float)</h3>
+    <pre><code>altura = 1.75
+peso = 70.5
+pi = 3.14159</code></pre>
+
+    <h3>🔹 3. Texto (str)</h3>
+    <pre><code>nome = "Carlos"
+cidade = 'São Paulo'
+frase = "Python é incrível!"</code></pre>
+
+    <h3>🔹 4. Booleano (bool)</h3>
+    <pre><code>is_maior = True
+choveu = False</code></pre>
+
+    <h2>🚀 3. Criando e Testando Variáveis no VSCode</h2>
+    <h3>✅ Passo 1: Instalando o VSCode e Python</h3>
+    <p>Baixe e instale o VSCode e Python e instale a extensão Python no VSCode.</p>
+
+    <h3>✅ Passo 2: Criando um Arquivo Python</h3>
+    <ol>
+        <li>Abra o VSCode.</li>
+        <li>Clique em File → New File.</li>
+        <li>Salve o arquivo como <code>aula_variaveis.py</code>.</li>
+        <li>Escreva o seguinte código:</li>
+    </ol>
+    <pre><code># Aula sobre Variáveis e Tipos de Dados
+nome = "Carlos"
+idade = 25
+altura = 1.75
+is_estudante = True
+
+print("Nome:", nome, "| Tipo:", type(nome))
+print("Idade:", idade, "| Tipo:", type(idade))
+print("Altura:", altura, "| Tipo:", type(altura))
+print("É estudante?", is_estudante, "| Tipo:", type(is_estudante))</code></pre>
+
+    <h3>✅ Passo 3: Executando o Código</h3>
+    <pre><code>python aula_variaveis.py</code></pre>
+    <p>Saída esperada:</p>
+    <pre><code>Nome: Carlos | Tipo: <class 'str'>
+Idade: 25 | Tipo: <class 'int'>
+Altura: 1.75 | Tipo: <class 'float'>
+É estudante? True | Tipo: <class 'bool'></code></pre>
+
+    <h2>🎯 4. Convertendo Tipos de Dados (Casting)</h2>
+    <pre><code>idade = "25"  # Era string
+idade = int(idade)  # Agora é inteiro
+
+altura = 1.75
+altura_texto = str(altura)  # Agora é string
+
+numero = 10
+numero_decimal = float(numero)  # Agora é float
+
+print(type(idade))  # <class 'int'>
+print(type(altura_texto))  # <class 'str'>
+print(type(numero_decimal))  # <class 'float'></code></pre>
+
+    <h2>🔥 5. Conclusão</h2>
+    <ul>
+        <li>Variáveis armazenam dados.</li>
+        <li>Python tem 4 tipos principais de dados: int, float, str, bool.</li>
+        <li>Podemos converter tipos com casting (<code>int()</code>, <code>float()</code>, <code>str()</code>,
+            <code>bool()</code>).
+        </li>
+        <li>No VSCode, podemos rodar códigos Python no terminal.</li>
+    </ul>
+</body>
+
+</html>

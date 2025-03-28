@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Repetição em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: "Courier New", monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Estruturas de Repetição em Python</h1>
+    <h2>🎯 Objetivo da Aula</h2>
+    <ul>
+        <li>Compreender as estruturas de repetição <code>for</code> e <code>while</code>.</li>
+        <li>Aprender a utilizá-las para criar loops.</li>
+        <li>Testar no VS Code.</li>
+    </ul>
+
+    <h2>🔄 Estrutura de Repetição: <code>for</code></h2>
+    <p>O laço <code>for</code> é utilizado para iterar sobre sequências (listas, strings, range, etc.).</p>
+
+    <h3>Exemplo 1: Iterando sobre uma lista</h3>
+    <pre><code>nomes = ["Ana", "Carlos", "João"]
+for nome in nomes:
+    print(f"Olá, {nome}!")</code></pre>
+
+    <h3>Exemplo 2: Usando <code>range()</code></h3>
+    <pre><code>for i in range(5):
+    print(i)</code></pre>
+
+    <h2>🔄 Estrutura de Repetição: <code>while</code></h2>
+    <p>O laço <code>while</code> executa um bloco de código enquanto uma condição for verdadeira.</p>
+
+    <h3>Exemplo 1: Contador simples</h3>
+    <pre><code>contador = 0
+while contador < 5:
+    print(f"Contador: {contador}")
+    contador += 1</code></pre>
+
+    <h3>Exemplo 2: Entrada do usuário</h3>
+    <pre><code>resposta = ""
+while resposta != "sair":
+    resposta = input("Digite algo (ou 'sair' para encerrar): ")
+    print(f"Você digitou: {resposta}")</code></pre>
+
+    <h2>🚀 Rodando o Código no VS Code</h2>
+    <ol>
+        <li>Abra o VS Code.</li>
+        <li>Crie um arquivo <code>.py</code> (exemplo: <code>repeticoes.py</code>).</li>
+        <li>Escreva o código acima.</li>
+        <li>Salve o arquivo (<code>Ctrl + S</code>).</li>
+        <li>Abra o terminal no VS Code (<code>Ctrl + J</code>).</li>
+        <li>Execute o código digitando: <code>python repeticoes.py</code></li>
+    </ol>
+
+    <h2>📌 Resumo</h2>
+    <ul>
+        <li><code>for</code> é usado para iterar sobre sequências.</li>
+        <li><code>while</code> executa enquanto a condição for verdadeira.</li>
+        <li>Para evitar loops infinitos, sempre garanta que a condição de parada seja atingida.</li>
+    </ul>
+</body>
+
+</html>
