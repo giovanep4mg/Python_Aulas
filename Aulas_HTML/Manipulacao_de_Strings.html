@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre Manipulação de Strings em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula sobre Manipulação de Strings em Python</h1>
+
+    <h2>O que são Strings?</h2>
+    <p>Strings são sequências de caracteres utilizadas para armazenar e manipular texto em Python. Elas podem ser
+        definidas com aspas simples (<code>' '</code>) ou duplas (<code>" "</code>).</p>
+
+    <h3>Exemplo de String</h3>
+    <pre>
+texto = "Olá, mundo!"
+print(texto)  # Saída: Olá, mundo!</pre>
+
+    <h2>Principais Operações com Strings</h2>
+
+    <h3>Concatenação</h3>
+    <p>Podemos unir duas ou mais strings utilizando o operador <code>+</code>.</p>
+    <pre>
+nome = "Carlos"
+sobrenome = "Silva"
+nome_completo = nome + " " + sobrenome
+print(nome_completo)  # Saída: Carlos Silva</pre>
+
+    <h3>Repetição</h3>
+    <p>É possível repetir uma string utilizando o operador <code>*</code>.</p>
+    <pre>
+risada = "ha" * 5
+print(risada)  # Saída: hahahahaha</pre>
+
+    <h3>Acesso a Caracteres</h3>
+    <p>Podemos acessar caracteres de uma string utilizando índices.</p>
+    <pre>
+palavra = "Python"
+print(palavra[0])  # Saída: P
+print(palavra[-1])  # Saída: n (último caractere)</pre>
+
+    <h3>Fatiamento de Strings</h3>
+    <p>Podemos extrair partes de uma string utilizando a sintaxe <code>[início:fim:passo]</code>.</p>
+    <pre>
+frase = "Manipulação de Strings"
+print(frase[0:11])  # Saída: Manipulação
+print(frase[12:])  # Saída: de Strings
+print(frase[::-1])  # Saída: sgnirtS ed oãçalupinaM (string invertida)</pre>
+
+    <h2>Métodos Úteis para Strings</h2>
+
+    <h3>Transformação de Maiúsculas e Minúsculas</h3>
+    <pre>
+texto = "Python é incrível"
+print(texto.upper())  # Saída: PYTHON É INCRÍVEL
+print(texto.lower())  # Saída: python é incrível
+print(texto.title())  # Saída: Python É Incrível</pre>
+
+    <h3>Remoção de Espaços</h3>
+    <pre>
+mensagem = "  Olá, mundo!  "
+print(mensagem.strip())  # Saída: "Olá, mundo!"
+print(mensagem.lstrip())  # Saída: "Olá, mundo!  "
+print(mensagem.rstrip())  # Saída: "  Olá, mundo!"</pre>
+
+    <h3>Substituição de Caracteres</h3>
+    <pre>
+frase = "Eu gosto de Java."
+nova_frase = frase.replace("Java", "Python")
+print(nova_frase)  # Saída: Eu gosto de Python.</pre>
+
+    <h3>Quebra de Strings</h3>
+    <p>Podemos dividir uma string em uma lista de palavras usando o método <code>split()</code>.</p>
+    <pre>
+texto = "Aprender Python é divertido"
+palavras = texto.split()
+print(palavras)  # Saída: ['Aprender', 'Python', 'é', 'divertido']</pre>
+
+    <h3>Junção de Strings</h3>
+    <p>Podemos juntar elementos de uma lista em uma única string usando <code>join()</code>.</p>
+    <pre>
+palavras = ["Python", "é", "legal"]
+frase = " ".join(palavras)
+print(frase)  # Saída: Python é legal</pre>
+
+    <h2>Conclusão</h2>
+    <p>A manipulação de strings é uma habilidade essencial em Python. Com essas técnicas, podemos trabalhar
+        eficientemente com textos, processar entradas de usuários e modificar conteúdos dinamicamente.</p>
+</body>
+
+</html>
