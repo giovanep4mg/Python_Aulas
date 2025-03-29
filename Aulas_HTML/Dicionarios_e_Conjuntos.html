@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre Dicionários e Conjuntos em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula sobre Dicionários e Conjuntos em Python</h1>
+
+    <h2>Dicionários em Python</h2>
+    <p>Um dicionário armazena pares chave-valor.</p>
+
+    <h3>Criando um dicionário</h3>
+    <pre>
+dados = {
+    "nome": "João",
+    "idade": 30,
+    "cidade": "São Paulo"
+}</pre>
+
+    <h3>Acessando valores</h3>
+    <pre>print(dados["nome"])  # Saída: João</pre>
+
+    <h3>Adicionando um novo par chave-valor</h3>
+    <pre>
+dados["profissão"] = "Engenheiro"</pre>
+
+    <h3>Alterando um valor</h3>
+    <pre>
+dados["idade"] = 31</pre>
+
+    <h3>Removendo um item</h3>
+    <pre>
+del dados["cidade"]</pre>
+
+    <h3>Iterando sobre um dicionário</h3>
+    <pre>
+for chave, valor in dados.items():
+    print(f"{chave}: {valor}")</pre>
+
+    <h3>📌 Dicionários (dict)</h3>
+    <pre>
+        Os dicionários são usados quando precisamos armazenar dados estruturados em pares chave-valor. Eles são úteis para
+        acessar informações rapidamente sem precisar percorrer toda a coleção.
+    </pre>
+
+    <h3>✅ Usos comuns de dicionários:</h3>
+    <pre>
+        Armazenar dados estruturados – como informações de usuários, produtos, configurações, etc.
+            
+        Facilitar buscas rápidas – a busca por uma chave em um dicionário é muito rápida.
+            
+        Converter dados entre diferentes formatos – útil em JSON e APIs.
+            
+        Contabilizar ocorrências – contar quantas vezes cada palavra aparece em um texto, por exemplo.
+    </pre>
+
+    <h2>Conjuntos em Python</h2>
+    <p>Um conjunto (set) é uma coleção de elementos únicos.</p>
+
+    <h3>Criando um conjunto</h3>
+    <pre>
+numeros = {1, 2, 3, 4, 5}</pre>
+
+    <h3>Adicionando elementos</h3>
+    <pre>
+numeros.add(6)</pre>
+
+    <h3>Removendo elementos</h3>
+    <pre>
+numeros.remove(3)</pre>
+
+    <h3>União de conjuntos</h3>
+    <pre>
+pares = {2, 4, 6, 8}
+resultado_uniao = numeros.union(pares)
+print(resultado_uniao)  # Saída: {1, 2, 4, 5, 6, 8}</pre>
+
+    <h3>Interseção de conjuntos</h3>
+    <pre>
+resultado_intersecao = numeros.intersection(pares)
+print(resultado_intersecao)  # Saída: {2, 4, 6}</pre>
+
+    <h3>Diferença entre conjuntos</h3>
+    <pre>
+resultado_diferenca = numeros.difference(pares)
+print(resultado_diferenca)  # Saída: {1, 5}</pre>
+
+    <h3>Verificando a existência de um elemento em um conjunto</h3>
+    <pre>
+print(4 in numeros)  # Saída: True</pre>
+
+    <h3>📌 Conjuntos (set)</h3>
+    <pre>
+        Os conjuntos são usados quando precisamos armazenar elementos únicos e realizar operações matemáticas como união,
+        interseção e diferença.
+    </pre>
+
+    <h3>✅ Usos comuns de conjuntos:</h3>
+    <pre>
+        Remover duplicatas de uma lista rapidamente.
+        
+        Verificar se um item existe de forma eficiente.
+        
+        Realizar operações matemáticas como união e interseção de dados.
+        
+        Filtrar dados de grandes coleções rapidamente.
+    </pre>
+
+    <h3>💡 Resumo:</h3>
+    <pre>
+        Use Dicionários quando precisar armazenar dados estruturados com acesso rápido por chave.
+        
+        Use Conjuntos quando precisar trabalhar com valores únicos e operações matemáticas como união e interseção.
+    </pre>
+
+</body>
+
+</html>

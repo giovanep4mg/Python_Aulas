@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre Funções e Retorno de Valores em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula sobre Funções e Retorno de Valores em Python</h1>
+
+    <h2>O que são Funções?</h2>
+    <p>Funções são blocos de código reutilizáveis que executam uma tarefa específica. Elas ajudam a organizar o código e
+        evitam repetições.</p>
+
+    <h3>Definição de uma função</h3>
+    <pre>
+def saudacao():
+    print("Olá, seja bem-vindo!")
+
+saudacao()  # Chamada da função</pre>
+
+    <h2>Passando Parâmetros</h2>
+    <p>Podemos passar valores para uma função através de parâmetros.</p>
+
+    <pre>
+def cumprimentar(nome):
+    print(f"Olá, {nome}!")
+
+cumprimentar("Carlos")  # Saída: Olá, Carlos!</pre>
+
+    <h2>Retorno de Valores</h2>
+    <p>Uma função pode retornar um valor usando a palavra-chave <code>return</code>.</p>
+
+    <pre>
+def soma(a, b):
+    return a + b
+
+resultado = soma(5, 3)
+print(resultado)  # Saída: 8</pre>
+
+    <h2>Parâmetros Padrão</h2>
+    <p>Podemos definir valores padrão para os parâmetros de uma função.</p>
+
+    <pre>
+def potencia(base, expoente=2):
+    return base ** expoente
+
+print(potencia(3))  # Saída: 9 (3^2)
+print(potencia(2, 3))  # Saída: 8 (2^3)</pre>
+
+    <h2>Funções com Múltiplos Retornos</h2>
+    <p>Uma função pode retornar múltiplos valores.</p>
+
+    <pre>
+def calcular_dobro_triplo(numero):
+    return numero * 2, numero * 3
+
+dobro, triplo = calcular_dobro_triplo(4)
+print(dobro)  # Saída: 8
+print(triplo)  # Saída: 12</pre>
+
+    <h2>Conclusão</h2>
+    <p>As funções são essenciais para organizar e reutilizar código. Elas permitem a criação de programas mais
+        eficientes e fáceis de manter.</p>
+</body>
+
+</html>
