@@ -1,4 +1,4 @@
-#####        Manipulação de Strings  
+#####       Principais Operações com Strings 
 
 ##  O que são Strings?
 
@@ -40,36 +40,52 @@ print("")
 
 # É possível repetir uma string utilizando o operador *.
 
-#
+# multiplica por 5 o texto "ha" e salva na var "risada"
 risada = "ha" * 5
 
-print(risada)
+print(risada) # saída => hahahahaha
 
 
 
 
 print("")
-print("===============================================================================================")
+print("====================================== Acesso a Caracteres ========================================================")
 print("")
 
+# Podemos acessar caracteres de uma string utilizando índices.
 
+# Adiciona o texto "Python" e salva na variável "palavra"
+palavra = "Python"
 
+# Exibirá a letra na posição 0
+print("Letra do texto, na posição 0: ", palavra[0]) # saída => Letra do texto, na posição 0:  P
 
-print("")
-print("===============================================================================================")
-print("")
-
-
-
-
-print("")
-print("===============================================================================================")
-print("")
-
-
-
+# Exibirá a letra na posição -1
+print("Letra do texto, na posição -1: ", palavra[-1]) # saída => Letra do texto, na posição -1: n  
 
 
 print("")
-print("===============================================================================================")
+print("==================================== Fatiamento de Strings ===========================================================")
 print("")
+
+# Podemos extrair partes de uma string utilizando a sintaxe [início:fim:passo].
+
+#
+frase = "Manipulação de Strings"
+
+
+# Pega "11" letras, na posição "0", e exibi na tela *** Conta os espaços também
+print(frase[0:11]) # saída => Manipulação
+
+
+print(frase[12:]) # saída => de Strings
+
+
+print(frase[::-1]) # saída => sgnirtS ed oãçalupinaM   *** STRING INVERTIDA
+
+
+print("")
+print("=====================================   Fim    =================================================")
+print("")
+
+
