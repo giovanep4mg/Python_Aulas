@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula: Modularização e Importação de Módulos em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        pre {
+            background: #222;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📌 Aula: Modularização e Importação de Módulos em Python</h1>
+
+        <h2>✅ O que é Modularização?</h2>
+        <p>Modularização é a técnica de dividir um programa em partes menores chamadas <strong>módulos</strong>,
+            melhorando a organização e reutilização do código.</p>
+
+        <h2>1️⃣ Criando e Importando Módulos</h2>
+        <p>Um módulo em Python é um arquivo <code>.py</code> contendo funções ou classes reutilizáveis.</p>
+        <pre># Arquivo: meu_modulo.py
+def saudacao(nome):
+    return f"Olá, {nome}! Bem-vindo ao mundo da modularização."
+        </pre>
+
+        <h2>2️⃣ Importando Módulos</h2>
+        <h3>🔹 Importação Simples</h3>
+        <pre>import meu_modulo
+print(meu_modulo.saudacao("João"))</pre>
+
+        <h3>🔹 Importando um Item Específico</h3>
+        <pre>from meu_modulo import saudacao
+print(saudacao("Maria"))</pre>
+
+        <h3>🔹 Importação com Alias</h3>
+        <pre>import meu_modulo as mm
+print(mm.saudacao("Carlos"))</pre>
+
+        <h3>🔹 Importando Tudo</h3>
+        <pre>from meu_modulo import *
+print(saudacao("Ana"))</pre>
+
+        <h2>3️⃣ Criando e Importando Pacotes</h2>
+        <p>Um <strong>pacote</strong> é uma pasta contendo módulos. Estrutura:</p>
+        <pre>meu_pacote/
+│── __init__.py
+│── modulo1.py
+│── modulo2.py</pre>
+        <p>Exemplo de importação:</p>
+        <pre>from meu_pacote import modulo1
+print(modulo1.soma(2, 3))</pre>
+
+        <h2>4️⃣ Módulos Embutidos do Python</h2>
+        <h3>🔹 Módulo <code>math</code></h3>
+        <pre>import math
+print(math.sqrt(25))
+print(math.pi)</pre>
+
+        <h3>🔹 Módulo <code>random</code></h3>
+        <pre>import random
+print(random.randint(1, 10))</pre>
+
+        <h2>5️⃣ Instalando e Usando Módulos Externos</h2>
+        <pre>pip install requests</pre>
+        <pre>import requests
+resposta = requests.get("https://api.github.com")
+print(resposta.status_code)</pre>
+
+        <h2>🎯 Conclusão</h2>
+        <p>✅ Modularização melhora a organização e reuso do código.<br>
+            ✅ Podemos importar módulos próprios, embutidos e externos.<br>
+            ✅ Pacotes organizam múltiplos módulos.<br>
+            ✅ Python tem muitos módulos prontos para uso!</p>
+    </div>
+</body>
+
+</html>

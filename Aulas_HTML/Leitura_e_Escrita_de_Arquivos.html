@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura e Escrita de Arquivos em Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p,
+        code,
+        pre {
+            font-size: 18px;
+            color: #555;
+        }
+
+        pre {
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>📂 Leitura e Escrita de Arquivos em Python</h1>
+
+    <h2>📌 1. O que é Manipulação de Arquivos?</h2>
+    <p>Em Python, podemos ler e escrever arquivos usando a função <code>open()</code>. Isso permite armazenar e
+        recuperar informações facilmente.</p>
+
+    <h2>📝 2. Abrindo um Arquivo</h2>
+    <pre><code>arquivo = open("exemplo.txt", "r")  # Abre o arquivo para leitura
+conteudo = arquivo.read()  # Lê o conteúdo do arquivo
+print(conteudo)
+arquivo.close()  # Fecha o arquivo</code></pre>
+    <p><strong>Modos de abertura:</strong></p>
+    <ul>
+        <li><code>"r"</code>: leitura</li>
+        <li><code>"w"</code>: escrita (sobrescreve o arquivo)</li>
+        <li><code>"a"</code>: escrita (adiciona ao final do arquivo)</li>
+        <li><code>"x"</code>: cria um novo arquivo</li>
+    </ul>
+
+    <h2>✏️ 3. Escrevendo em Arquivos</h2>
+    <pre><code>arquivo = open("exemplo.txt", "w")  # Abre para escrita
+arquivo.write("Olá, mundo!\n")  # Escreve no arquivo
+arquivo.write("Python facilita a manipulação de arquivos.\n")
+arquivo.close()</code></pre>
+
+    <h2>📚 4. Lendo Linha por Linha</h2>
+    <pre><code>arquivo = open("exemplo.txt", "r")
+for linha in arquivo:
+    print(linha.strip())  # Remove quebras de linha extras
+arquivo.close()</code></pre>
+
+    <h2>🚀 5. Usando "with open" (Forma Recomendada)</h2>
+    <pre><code>with open("exemplo.txt", "r") as arquivo:
+    conteudo = arquivo.read()
+    print(conteudo)  # O arquivo é fechado automaticamente</code></pre>
+
+    <h2>🔥 6. Conclusão</h2>
+    <ul>
+        <li>O método <code>open()</code> permite manipular arquivos.</li>
+        <li>Os modos <code>"r"</code>, <code>"w"</code>, <code>"a"</code>, e <code>"x"</code> definem como o arquivo
+            será manipulado.</li>
+        <li>Usar <code>with open()</code> é a forma mais segura de manipular arquivos.</li>
+    </ul>
+</body>
+
+</html>

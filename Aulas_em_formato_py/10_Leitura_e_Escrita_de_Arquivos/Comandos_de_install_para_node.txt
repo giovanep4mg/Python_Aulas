@@ -1,0 +1,32 @@
+** Como iniciar um projeto Node no VScode **
+--> abre o pront de Comando.
+-> pode ser feito no VScode =>> VScode e no terminal dele adicione esses comando:
+
+// criar uma pasta, em algum local que você saiba onde está depois
+--> mkdir *nomeda pasta*
+
+// comando para abrir a pasta que foi criada
+->>>> cd  *nome da pasta que você criou*
+
+// comando para iniciar o projeto
+-->> n﻿pm init -y
+
+// vamos utilizar o Express que é um framework para aplicações web do Node.js que irá nos auxiliar em diversas situações, como por exemplo na criação de um servidor e gerenciamento de rotas, que é o que vamos fazer.
+--> n﻿pm install express
+
+* instalei o Express
+-->  npm install express
+
+* instalei o 'ejs'
+-->  npm install ejs -save
+
+*** Abra a Pasta no VScode, 
+
+** Para rodar o programa 
+--> node index.js
+
+* 
+
+** Para instalar o Less
+--> npm install less
+

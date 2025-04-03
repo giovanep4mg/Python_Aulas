@@ -1,0 +1,5 @@
+Olá mundo!
+Testando escrever no bloco de notas!
+Escrevendo uma nova linha no exemplo.txt
+Eu sei, na verdade não sei o que colocar aqui!
+Testando se adiciona o texto e se vai abrir depois.

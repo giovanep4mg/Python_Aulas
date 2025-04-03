@@ -1,0 +1,3 @@
+Este é o conteúdo do novo arquivo.
+Podemos adicionar várias linhas também.
+Python é muito legal!
